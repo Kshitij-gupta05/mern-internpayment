@@ -7,6 +7,8 @@ app.use(express.json())
 
 const BASE_URL=process.env.BASE_URL;
 
+const PORT= process.env.PORT || 3001;
+
 const corsorgin={
     origin:`${BASE_URL}`
 };
@@ -45,6 +47,6 @@ app.post("/create-checkout-session", async (req, res)=>{
     }
 })
 
-app.listen(3001,()=>{
+app.listen(PORT,()=>{
     console.log("server is running");
 })
