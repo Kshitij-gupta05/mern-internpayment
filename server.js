@@ -48,5 +48,5 @@ app.post("/create-checkout-session", async (req, res)=>{
 })
 
 app.listen(PORT,()=>{
-    console.log("server is running");
+    console.log(`server is running at ${PORT}`);
 })
